@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -48,7 +49,7 @@
             letter-spacing: 2px;
         }
 
-        /* PESTAÃ‘AS */
+        /* PESTAÑAS */
         .pestanas {
             display: flex;
             justify-content: space-between;
@@ -152,7 +153,7 @@
             gap: 8px;
             color: #9ca3af;
             font-size: 0.95em;
-            font-family: sans-serif; /* Texto mÃ¡s limpio para leer pasos */
+            font-family: sans-serif;
         }
 
         .pasos-lista div {
@@ -250,40 +251,40 @@
         <h1>THIAGO STORE</h1>
         <div class="subtitulo">RECARGAS FREE FIRE</div>
 
-        <!-- PESTAÃ‘AS DE NAVEGACIÃ“N -->
+        <!-- PESTAÑAS DE NAVEGACIÓN -->
         <div class="pestanas">
             <button class="btn-pestana activo" onclick="cambiarPestana('infinitos', event)">Diamantes</button>
             <button class="btn-pestana" onclick="cambiarPestana('por_id', event)">1 Vez por ID</button>
             <button class="btn-pestana" onclick="cambiarPestana('otros', event)">Pases y Objetos</button>
         </div>
 
-        <!-- CONTENIDO PESTAÃ‘A 1 -->
+        <!-- CONTENIDO PESTAÑA 1 (Precios Actualizados) -->
         <div id="tab-infinitos" class="seccion-contenido activo">
             <h2>Diamantes Infinitos</h2>
             <div class="contenedor-apilado">
                 <div class="item-precio"><div class="producto">100 Diamantes <span class="bono">+10 BONO</span></div><div class="precio">$1.290</div></div>
                 <div class="item-precio"><div class="producto">310 Diamantes <span class="bono">+31 BONO</span></div><div class="precio">$3.770</div></div>
-                <div class="item-precio"><div class="producto">520 Diamantes <span class="bono">+52 BONO</span></div><div class="precio">$6.160</div></div>
-                <div class="item-precio"><div class="producto">1060 Diamantes <span class="bono">+106 BONO</span></div><div class="precio">$11.200</div></div>
-                <div class="item-precio"><div class="producto">2160 Diamantes <span class="bono">+218 BONO</span></div><div class="precio">$21.960</div></div>
+                <div class="item-precio"><div class="producto">520 Diamantes <span class="bono">+52 BONO</span></div><div class="precio">$6.200</div></div>
+                <div class="item-precio"><div class="producto">1060 Diamantes <span class="bono">+106 BONO</span></div><div class="precio">$11.210</div></div>
+                <div class="item-precio"><div class="producto">2160 Diamantes <span class="bono">+218 BONO</span></div><div class="precio">$23.000</div></div>
                 <div class="item-precio"><div class="producto">5600 Diamantes <span class="bono">+560 BONO</span></div><div class="precio">$55.400</div></div>
             </div>
         </div>
 
-        <!-- CONTENIDO PESTAÃ‘A 2 -->
+        <!-- CONTENIDO PESTAÑA 2 -->
         <div id="tab-por_id" class="seccion-contenido">
             <h2>Diamantes (1 Vez por ID)</h2>
             <div class="contenedor-apilado">
-                <div class="item-precio"><div class="producto">110 Diamantes</div><div class="precio">$900</div></div>
-                <div class="item-precio"><div class="producto">341 Diamantes</div><div class="precio">$2.900</div></div>
-                <div class="item-precio"><div class="producto">572 Diamantes</div><div class="precio">$4.700</div></div>
-                <div class="item-precio"><div class="producto">1.166 Diamantes</div><div class="precio">$9.000</div></div>
-                <div class="item-precio"><div class="producto">2.398 Diamantes</div><div class="precio">$18.000</div></div>
-                <div class="item-precio"><div class="producto">6.160 Diamantes</div><div class="precio">$44.400</div></div>
+                <div class="item-precio"><div class="producto">110 Diamantes</div><div class="precio">$910</div></div>
+                <div class="item-precio"><div class="producto">341 Diamantes</div><div class="precio">$2.910</div></div>
+                <div class="item-precio"><div class="producto">572 Diamantes</div><div class="precio">$4.710</div></div>
+                <div class="item-precio"><div class="producto">1166 Diamantes</div><div class="precio">$9.020</div></div>
+                <div class="item-precio"><div class="producto">2398 Diamantes</div><div class="precio">$18.050</div></div>
+                <div class="item-precio"><div class="producto">6160 Diamantes</div><div class="precio">$44.050</div></div>
             </div>
         </div>
 
-        <!-- CONTENIDO PESTAÃ‘A 3 -->
+        <!-- CONTENIDO PESTAÑA 3 -->
         <div id="tab-otros" class="seccion-contenido">
             <h2>Pases y Objetos</h2>
             <div class="contenedor-apilado">
@@ -295,11 +296,11 @@
 
         <!-- PASOS PARA COMPRAR -->
         <div class="pasos-compra">
-            <h3>Â¿CÃ³mo comprar?</h3>
+            <h3>¿Cómo comprar?</h3>
             <div class="pasos-lista">
                 <div><span>1</span> Ingresa tu ID de Free Fire.</div>
                 <div><span>2</span> Elige el paquete y la cantidad.</div>
-                <div><span>3</span> Selecciona tu pago y envÃ­a el pedido.</div>
+                <div><span>3</span> Selecciona tu pago y envía el pedido.</div>
             </div>
         </div>
 
@@ -310,7 +311,7 @@
             <label>ID del Jugador:</label>
             <input type="text" id="id_jugador" placeholder="Ingresa tu ID de Free Fire">
             
-            <label>Â¿QuÃ© vas a comprar?</label>
+            <label>¿Qué vas a comprar?</label>
             <select id="tipo_compra" onchange="sincronizarPestanaFormulario()">
                 <option value="infinitos">Diamantes Infinitos</option>
                 <option value="por_id">Diamantes (1 Vez por ID)</option>
@@ -322,9 +323,9 @@
                 <select id="paquete_infinitos" onchange="calcularTotal()">
                     <option value="100 Diamantes + 10 Bono" data-precio="1290">100 Diamantes + 10 Bono - $1.290</option>
                     <option value="310 Diamantes + 31 Bono" data-precio="3770">310 Diamantes + 31 Bono - $3.770</option>
-                    <option value="520 Diamantes + 52 Bono" data-precio="6160">520 Diamantes + 52 Bono - $6.160</option>
-                    <option value="1060 Diamantes + 106 Bono" data-precio="11200">1060 Diamantes + 106 Bono - $11.200</option>
-                    <option value="2160 Diamantes + 218 Bono" data-precio="21960">2160 Diamantes + 218 Bono - $21.960</option>
+                    <option value="520 Diamantes + 52 Bono" data-precio="6200">520 Diamantes + 52 Bono - $6.200</option>
+                    <option value="1060 Diamantes + 106 Bono" data-precio="11210">1060 Diamantes + 106 Bono - $11.210</option>
+                    <option value="2160 Diamantes + 218 Bono" data-precio="23000">2160 Diamantes + 218 Bono - $23.000</option>
                     <option value="5600 Diamantes + 560 Bono" data-precio="55400">5600 Diamantes + 560 Bono - $55.400</option>
                 </select>
             </div>
@@ -332,17 +333,17 @@
             <div id="div_por_id" style="display:none;">
                 <label>Paquete (1 por ID):</label>
                 <select id="paquete_por_id" onchange="calcularTotal()">
-                    <option value="110 Diamantes" data-precio="900">110 Diamantes - $900</option>
-                    <option value="341 Diamantes" data-precio="2900">341 Diamantes - $2.900</option>
-                    <option value="572 Diamantes" data-precio="4700">572 Diamantes - $4.700</option>
-                    <option value="1.166 Diamantes" data-precio="9000">1.166 Diamantes - $9.000</option>
-                    <option value="2.398 Diamantes" data-precio="18000">2.398 Diamantes - $18.000</option>
-                    <option value="6.160 Diamantes" data-precio="44400">6.160 Diamantes - $44.400</option>
+                    <option value="110 Diamantes" data-precio="910">110 Diamantes - $910</option>
+                    <option value="341 Diamantes" data-precio="2910">341 Diamantes - $2.910</option>
+                    <option value="572 Diamantes" data-precio="4710">572 Diamantes - $4.710</option>
+                    <option value="1166 Diamantes" data-precio="9020">1166 Diamantes - $9.020</option>
+                    <option value="2398 Diamantes" data-precio="18050">2398 Diamantes - $18.050</option>
+                    <option value="6160 Diamantes" data-precio="44050">6160 Diamantes - $44.050</option>
                 </select>
             </div>
 
             <div id="div_otros" style="display:none;">
-                <label>ArtÃ­culo:</label>
+                <label>Artículo:</label>
                 <select id="producto_especial" onchange="calcularTotal()">
                     <option value="Pases" data-precio="1900">Pases - $1.900</option>
                     <option value="Fragmentos" data-precio="90">Fragmentos - $90 c/u</option>
@@ -358,14 +359,14 @@
                 Total a Pagar: <span id="texto_total" style="font-weight: bold;">$1.290</span>
             </div>
 
-            <label>MÃ©todo de Pago:</label>
+            <label>Método de Pago:</label>
             <select id="metodo_pago">
                 <option value="MercadoPago">MercadoPago</option>
                 <option value="Transferencia">Transferencia Bancaria</option>
-                <option value="UalÃ¡">UalÃ¡</option>
+                <option value="Ualá">Ualá</option>
             </select>
 
-            <button class="btn-comprar" onclick="enviarPedido()">ðŸ“² Enviar Pedido por WhatsApp</button>
+            <button class="btn-comprar" onclick="enviarPedido()"> Enviar Pedido por WhatsApp</button>
         </div>
     </div>
 
@@ -442,7 +443,10 @@
             const cantidad = document.getElementById('cantidad').value || 1;
 
             if (idJugador === "") {
-                alert("Por favor, ingresa tu ID de jugador.");
+                const totalCalculado = document.querySelector('.total-calculado');
+                const originalBg = totalCalculado.style.backgroundColor;
+                totalCalculado.style.backgroundColor = '#7f1d1d';
+                setTimeout(() => totalCalculado.style.backgroundColor = originalBg, 1500);
                 return;
             }
 
@@ -464,13 +468,13 @@
             const precioUnitario = parseFloat(optionSeleccionada.getAttribute('data-precio')) || 0;
             const totalFinal = precioUnitario * cantidad;
 
-            const mensaje = `Â¡Hola! Quiero hacer un pedido en *THIAGO STORE*:\n\n` +
-                            `ðŸ“Œ *ID del Jugador:* ${idJugador}\n` +
-                            `ðŸ’Ž *Producto:* ${productoNombre}\n` +
-                            `ðŸ“¦ *Cantidad:* ${cantidad}\n` +
-                            `ðŸ’µ *Total a pagar:* $${totalFinal.toLocaleString('es-AR')}\n` +
-                            `ðŸ’³ *MÃ©todo de pago:* ${metodoPago}\n\n` +
-                            `Â¿Me confirmas los datos?`;
+            const mensaje = `¡Hola! Quiero hacer un pedido en *THIAGO STORE*:\n\n` +
+                            ` *ID del Jugador:* ${idJugador}\n` +
+                            ` *Producto:* ${productoNombre}\n` +
+                            ` *Cantidad:* ${cantidad}\n` +
+                            ` *Total a pagar:* $${totalFinal.toLocaleString('es-AR')}\n` +
+                            ` *Método de pago:* ${metodoPago}\n\n` +
+                            `¿Me confirmas los datos?`;
 
             const urlWhatsApp = `https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${encodeURIComponent(mensaje)}`;
             window.location.href = urlWhatsApp;
@@ -480,3 +484,4 @@
     </script>
 </body>
 </html>
+```
